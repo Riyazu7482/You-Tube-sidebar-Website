@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Sidebar UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <button id="menuBtn" class="menu-btn">☰</button>
+        <div class="logo"><span>▶</span> YouTube</div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput"
+                   placeholder="Search menu...">
+            <button id="searchBtn">⌕</button>
+        </div>
+
+        <div class="profile">HZ</div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <h3 class="menu-title">YOUTUBE MENU</h3>
+
+        <button class="nav-item active" data-page="Home">
+            <span>⌂</span> Home
+        </button>
+
+        <button class="nav-item" data-page="Explore">
+            <span>⌕</span> Explore
+        </button>
+
+        <button class="nav-item" data-page="Shorts">
+            <span>▷</span> Shorts
+        </button>
+
+        <button class="nav-item" data-page="Subscriptions">
+            <span>▤</span> Subscriptions
+        </button>
+
+        <hr>
+
+        <button class="nav-item" data-page="Information">
+            <span>ⓘ</span> Information
+        </button>
+
+        <button class="nav-item" data-page="Settings">
+            <span>⚙</span> Settings
+        </button>
+
+        <button class="nav-item" data-page="Log out">
+            <span>⇥</span> Log out
+        </button>
+
+        <div class="account">
+            <div class="avatar">HZ</div>
+            <div>
+                <h4>Hesala hertz</h4>
+                <p>Premium Account</p>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <section class="hero">
+            <p class="tag">CREATIVE DASHBOARD</p>
+
+            <h1 id="pageTitle">Welcome Home</h1>
+
+            <p id="pageDescription">
+                Discover something new and enjoy your creative world.
+                This is a responsive YouTube-inspired website.
+            </p>
+
+            <button class="explore-btn" id="exploreBtn">
+                Explore Menu →
+            </button>
+        </section>
+
+        <section class="cards">
+            <div class="card featured">
+                <div class="play-icon">▶</div>
+                <div>
+                    <h2>Discover Something New</h2>
+                    <p>Explore your creative world.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="symbol">◈</div>
+                <h3>Your Library</h3>
+                <p>Your favorite content in one place.</p>
+            </div>
+
+            <div class="card">
+                <div class="symbol">✦</div>
+                <h3>Creator Tools</h3>
+                <p>Create your own digital experience.</p>
+            </div>
+        </section>
+
+        <p id="status">Home selected</p>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
